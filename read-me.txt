@@ -1,0 +1,17 @@
+# Responsive Menu
+
+Responsive Menu is a style sheet (created in SASS) and HTML mark-up for complex navigation. 
+
+The site I developed this mark up and Sass is massive and we needed a way to use one set of code for both the desktop and mobile menus. The desktop menu only show the user the current page, it's parent and it's children. The mobile menu will show the parent's up to the root, as well as the children and grand children pages. The job of the styles then in to hide 90% of the menu on desktop, while being able to access massive amounts of links on mobile. 
+
+This menu system was developed for a Responsive Enterprise Level site of 3500+ pages. Most responsive menu systems only send users through a menu system of branches that end in one page. This menu system allow massive depth, and hundreds of links on mobile.
+
+The production version of this is actually much more complex then this stripped down concept version. The production version has addition function on the onload that trigger the mobile menu when the page width is less the 768px but also on resize. 
+
+*****************************************************************************
+
+Please Note:
+
+MenuTransition.js the javascript that is used for this project was written by a co-worker, and I take no credit for the javascript. It was not originally designed for mobile use, but through some manipulation it was repurposed.  
+
+

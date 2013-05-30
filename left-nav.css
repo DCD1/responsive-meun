@@ -317,10 +317,7 @@ nav#menu.nav.menuTransition ul ul li ul li ul li ul li ul li ul li ul li ul li a
     color: #484848;
     font-size: 14px;
     display: table;
-    /* a:hover, a:active{ background-color:$hover;color:$hover-text; }*/
-    /*commented out for testing*/
-    /* a:hover.navback{background-color:$hover;}*/
-    /*commented out for testing*/
+    
   }
   /* line 123, ../sass/left-nav.scss */
   nav#menu ul li a:link, nav#menu ul li a:visited {
@@ -365,9 +362,7 @@ nav#menu.nav.menuTransition ul ul li ul li ul li ul li ul li ul li ul li ul li a
   }
 
   /* forward arrow styles */
-  /*nav#menu.nav.menuTransition	ul li.expandable a.navnext:hover{background-color: $hover;}
-  a:hover.navnext{background-color:$hover;} */
-  /*commented out for testing*/
+
   /* line 137, ../sass/left-nav.scss */
   .nextarrow {
     border-left: 1px solid white;
@@ -392,9 +387,7 @@ nav#menu.nav.menuTransition ul ul li ul li ul li ul li ul li ul li ul li ul li a
     background-color: #cac8c2;
     color: #676860 !important;
     line-height: 40px;
-    /*padding-left:10px;*/
     display: table;
-    /*a:hover.navnext.nextarrow.current{background-color:$hover;} commented out for testing*/
   }
   /* line 142, ../sass/left-nav.scss */
   nav#menu.nav ul.parentnav li.this a:link, nav#menu.nav ul.parentnav li.this a:visited {
@@ -534,8 +527,7 @@ nav#menu.nav.menuTransition ul ul li ul li ul li ul li ul li ul li ul li ul li a
     padding: 0;
     list-style: none;
     width: 100%;
-    
-  }
+    }
 
   /* line 201, ../sass/left-nav.scss */
   nav#menu.nav ul.parentnav {
