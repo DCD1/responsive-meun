@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+	
+<head>
+
+	<meta charset="utf-8" />
+	<!-- Set the viewport width to device width for mobile -->
+    <meta name = "viewport" content = "user-scalable=no, initial-scale=1.0, maximum-scale=1.0, width=device-width"/>
+    <meta name="apple-mobile-web-app-capable" content="yes" />	
+	<link rel="stylesheet" href="left-nav.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+
+    <script src="menuTransition.min.js" type="text/javascript"></script>
+ <script type="text/javascript">
+			$(document).ready(function() {
+                
+                if($(window).width() <760) {
+                
+                    var $changeItem = $("#menu");
+                    $changeItem.menuTransition();
+                    
+                    $(".backarrow").click(function() {
+                        $changeItem.menuTransition("goUp", 1);
+                        
+                        return false;
+                    });		
+                    
+                    $("#top").click(function() {
+                        $changeItem.menuTransition("goTop");
+                        
+                        return false;
+                    });		
+                }
+                    else { }
+                
+                
+                
+			});
+			
+			
+		</script>
+</head>
+
+
+<nav id="menu" class="nav">
+    <ul class="parentnav">
+        <li class="inactive"><a href="/somelink.html">Home</a></li>
+        <li class="this active expandable"><span>Link 1</span><a href="#" class="navnext nextarrow"></a>
+		    <ul class="open">
+				<li class="backto"><a href="#" class="backarrow navback current"><span>Link Level One</span></a></li>
+                <li class="active-page"><span>Current Page</span></li>	
+				<li class="active"><a href="/somelink.html">Link Two</a>
+                    <ul >
+                       <li class="backto"><a href="#" class="backarrow navback "><span>Link Level Two</span></a></li>
+                       <li class="parent"><a href="/somelink.html">Link One A</a></li>
+                    </ul>
+                </li>
+    			<li class="active"><a href="/rwd/health/topics/index.cfm">link Three</a><a href="#" class="navnext nextarrow"></a>
+                    <ul >
+				        <li class="backto"><a href="#" class="backarrow navback "><span>Link Level Two</span></a></li>
+                        <li class="parent"><a href="/somelink.html">Link One B</a></li>	
+					    <li class="active"><a href="/somelink.html">Link Two B </a><a href="/somelink.html" class="navnext nextarrow navopen"></a></li>
+                        <li class="active"><a href="/somelink.html">Link Three B</a><a href="/somelink.html" class="navnext nextarrow navopen"></a></li>
+                        <li class="active"><a href="/somelink.html">link Four B</a><a href="/somelink.html" class="navnext nextarrow navopen"></a></li>
+                        <li class="active"><a href="/somelink.html">Link Five B</a><a href="/somelink.html" class="navnext nextarrow navopen"></a></li>
+                        <li class="active"><a href="/somelink.html">Link Six B</a><a href="/somelink.html" class="navnext nextarrow navopen"></a></li>
+                        <li class="active"><a href="/somelink.html">Link Seven B</a><a href="/somelink.html" class="navnext nextarrow navopen"></a></li>
+    				</ul>
+				</li>
+    			<li class="active"><a href="/somelink.html">Link Two A</a><a href="#" class="navnext nextarrow"></a>
+                    <ul >
+                        <li class="backto"><a href="#" class="backarrow navback "><span>Link Level Two </span></a></li>
+    				    <li class="parent"><a href="/somelink.html">Link One C</a></li>	
+                        <li class="active"><a href="/somelink.html">Link Two C</a></li>
+    					<li class="active"><a href="/somelink.html">Link Three C</a><a href="/somelink.html" class="navnext nextarrow navopen"></a></li>
+    					<li class="active"><a href="/somelink.html">Link Four C</a></li>
+    					<li class="active"><a href="/somelink.html">Link Five C</a></li>
+                        <li class="active"><a href="/somelink.html">Link Six C</a></li>
+    					<li class="active"><a href="/somelink.html">Link Seven C</a><a href="/somelink.html" class="navnext nextarrow navopen"></a></li>
+                    </ul>
+				</li>
+    			<li class="active"><a href="/somelink.html">Link Four</a>
+		    		   <ul >
+					       <li class="backto"><a href="#" class="backarrow navback "><span>Link Level Two</span></a></li>
+                           <li class="parent"><a href="/somelink.html">Link One D</a></li>	
+					   </ul>
+				</li>
+    		</ul> 
+        <li class="inactive expandable"><a href="/somelink.html">Link Two</a><a href="/somelink.html" class="navnext nextarrow navopen"></a>
+		    <ul >
+                <li class="backto"><a href="#" class="backarrow navback "><span>Link Level One</span></a></li>
+                <li class="parent"><a href="/somelink.html">Link One E</a></li>	
+				<li class="inactive"><a href="/somelink.html">Link Two E</a><a href="/somelink.html" class="navnext nextarrow navopen"></a></li>
+                <li class="inactive"><a href="/somelink.html">Link Three E</a><a href="/somelink.html" class="navnext nextarrow navopen"></a></li>
+    			<li class="inactive"><a href="/somelink.html">Link Four E</a><a href="/somelink.html" class="navnext nextarrow navopen"></a></li>
+    			<li class="inactive"><a href="/somelink.html">Link Five E</a><a href="/somelink.html" class="navnext nextarrow navopen"></a></li>
+    			<li class="inactive"><a href="/somelink.html">Link Six E</a><a href="/somelink.html" class="navnext nextarrow navopen"></a></li>
+    			<li class="inactive"><a href="/somelink.html">Link Seven E</a></li>
+    			<li class="inactive"><a href="/somelink.html">Link Eight E</a></li>
+    		</ul>
+		</li>
+        <li class="inactive expandable"><a href="/somelink.html">Link Three</a><a href="/somelink.html" class="navnext nextarrow navopen"></a></li>
+        <li class="inactive expandable"><a href="/somelink.html">Link Four</a><a href="/somelink.html" class="navnext nextarrow navopen"></a>
+            <ul >
+				<li class="backto"><a href="#" class="backarrow navback "><span>Link Level One</span></a></li>
+    			<li class="parent"><a href="/somelink.html">Link One F</a></li>	
+				<li class="inactive"><a href="/somelink.html">Link Two F</a></li>
+    			<li class="inactive"><a href="/somelink.html">Link Three F</a><a href="/somelink.html" class="navnext nextarrow navopen"></a></li>
+    			<li class="inactive"><a href="/somelink.html">Link Four F</a><a href="/somelink.html" class="navnext nextarrow navopen"></a></li>
+    		</ul>
+		</li>
+        <li class="inactive expandable"><a href="/somelink.html">Link Five</a><a href="/somelink.html" class="navnext nextarrow navopen"></a></li>
+        <li class="inactive expandable"><a href="/somelink.html">Link Six</a><a href="/somelink.html" class="navnext nextarrow navopen"></a></li>
+    </ul>
+</nav>
+
+<!-- calls left/mobile navigation -->

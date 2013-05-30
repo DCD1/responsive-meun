@@ -1,0 +1,613 @@
+/* CSS Document */
+
+
+
+/* line 17, ../sass/left-nav.scss */
+.show {
+  display: block !important;
+}
+
+/* line 19, ../sass/left-nav.scss */
+#current-page {
+  display: none;
+  min-height: 24px;
+  color: #3e3e3e;
+  background-color: #fff;
+  width: 100%;
+  padding: 6px;
+  font-weight: bold;
+  line-height: 130%;
+}
+
+/* line 20, ../sass/left-nav.scss */
+.smaller {
+  font-size: 10px;
+  font-weight: normal;
+}
+
+/* line 21, ../sass/left-nav.scss */
+nav#menu ul li {
+  background-color: #ebebeb;
+  color: #484848;
+}
+/* line 22, ../sass/left-nav.scss */
+nav#menu ul li a:link, nav#menu ul li a:visited {
+  color: #555;
+  font-weight: bold;
+  line-height: 130%;
+  display: block;
+  padding: 3px 0 3px 10px;
+  border-bottom: 1px solid #bfbeb5;
+}
+/* line 23, ../sass/left-nav.scss */
+nav#menu ul li a:hover, nav#menu ul li a:active {
+  background-color: #9a978c;
+  color: white;
+}
+/* line 24, ../sass/left-nav.scss */
+nav#menu ul li a.navback, nav#menu ul li a.navnext {
+  display: none;
+}
+
+/* line 27, ../sass/left-nav.scss */
+nav#menu.nav.menuTransitions ul li a:hover, nav#menu.nav.menuTransitions ul li a:active {
+  background-color: #9a978c;
+  color: white;
+}
+
+/* line 29, ../sass/left-nav.scss */
+nav#menu.nav ul.parentnav {
+  visibility: hidden;
+}
+/* line 30, ../sass/left-nav.scss */
+nav#menu.nav ul.parentnav > li:first-child {
+  visibility: visible;
+}
+/* line 31, ../sass/left-nav.scss */
+nav#menu.nav ul.parentnav ul.active li {
+  visibility: visible;
+}
+/* line 32, ../sass/left-nav.scss */
+nav#menu.nav ul.parentnav li.parent {
+  display: none;
+}
+/* line 33, ../sass/left-nav.scss */
+nav#menu.nav ul.parentnav .open {
+  display: block;
+}
+/* line 34, ../sass/left-nav.scss */
+nav#menu.nav ul.parentnav .closed {
+  display: none;
+}
+/* line 35, ../sass/left-nav.scss */
+nav#menu.nav ul.parentnav li.this {
+  background-color: #7b776c;
+  color: #fff !important;
+  line-height: 130%;
+}
+/* line 36, ../sass/left-nav.scss */
+nav#menu.nav ul.parentnav li.this span {
+  padding: 3px 3px 3px 10px;
+  font-weight: bold;
+  line-height: 19px;
+}
+/* line 39, ../sass/left-nav.scss */
+nav#menu.nav ul.parentnav ul li.this span {
+  padding: 3px 3px 3px 20px;
+  display: table-cell;
+}
+/* line 41, ../sass/left-nav.scss */
+nav#menu.nav ul.parentnav ul ul li.this span {
+  padding: 3px 3px 3px 35px;
+  display: table-cell;
+}
+/* line 44, ../sass/left-nav.scss */
+nav#menu.nav ul.parentnav ul ul ul li.this span {
+  padding: 3px 3px 3px 50px;
+  display: table-cell;
+}
+/* line 47, ../sass/left-nav.scss */
+nav#menu.nav ul.parentnav ul ul ul ul li.this span {
+  padding: 3px 3px 3px 65px;
+  display: table-cell;
+}
+/* line 50, ../sass/left-nav.scss */
+nav#menu.nav ul.parentnav ul ul ul ul ul li.this span {
+  padding: 3px 3px 3px 80px;
+  display: table-cell;
+}
+/* line 52, ../sass/left-nav.scss */
+nav#menu.nav ul.parentnav ul ul ul ul ul ul li.this span {
+  padding: 3px 3px 3px 95px;
+  display: table-cell;
+}
+/* line 54, ../sass/left-nav.scss */
+nav#menu.nav ul.parentnav ul ul ul ul ul ul ul li.this span {
+  padding: 3px 3px 3px 110px;
+  display: table-cell;
+}
+/* line 56, ../sass/left-nav.scss */
+nav#menu.nav ul.parentnav ul ul ul ul ul ul ul ul li.this span {
+  padding: 3px 3px 3px 125px;
+  display: table-cell;
+}
+
+/* line 67, ../sass/left-nav.scss */
+nav#menu.nav ul.parentnav li.active {
+  visibility: visible;
+}
+
+/* line 68, ../sass/left-nav.scss */
+nav#menu.nav ul.parentnav li.inactive {
+  display: none;
+}
+
+/* line 69, ../sass/left-nav.scss */
+nav#menu.nav.menuTransition, nav#menu.nav {
+  width: 235px;
+  position: relative;
+  overflow: hidden;
+  float: left;
+}
+/* line 70, ../sass/left-nav.scss */
+nav#menu.nav.menuTransition ul, nav#menu.nav ul {
+  list-style: none;
+}
+/* line 71, ../sass/left-nav.scss */
+nav#menu.nav.menuTransition ul li ul, nav#menu.nav ul li ul {
+  margin: 0;
+    padding:0;
+}
+/* line 72, ../sass/left-nav.scss */
+nav#menu.nav.menuTransition ul ul ul, nav#menu.nav.menuTransition ul ul ul ul, nav#menu.nav ul ul ul, nav#menu.nav ul ul ul ul {
+  display: none;
+  margin: 0;
+}
+/* line 74, ../sass/left-nav.scss */
+nav#menu.nav.menuTransition li.active-page, nav#menu.nav li.active-page {
+  display: none;
+  /*background-color: $current;font-weight: bold;padding:3px;*/
+}
+/* line 76, ../sass/left-nav.scss */
+nav#menu.nav.menuTransition ul ul li, nav#menu.nav ul ul li {
+  background-color: #ebebeb;
+}
+/* line 77, ../sass/left-nav.scss */
+nav#menu.nav.menuTransition ul ul li a, nav#menu.nav ul ul li a {
+  padding-right: 5px;
+  padding-left: 20px;
+  color: #4d4d4d;
+  font-weight: normal;
+}
+/* line 78, ../sass/left-nav.scss */
+nav#menu.nav.menuTransition ul ul li a:hover, nav#menu.nav.menuTransition ul ul li a:active, nav#menu.nav ul ul li a:hover, nav#menu.nav ul ul li a:active {
+  color: white;
+}
+/* line 79, ../sass/left-nav.scss */
+nav#menu.nav.menuTransition ul ul li ul li, nav#menu.nav ul ul li ul li {
+  background-color: #ebebeb;
+}
+/* line 80, ../sass/left-nav.scss */
+nav#menu.nav.menuTransition ul ul li ul li a, nav#menu.nav ul ul li ul li a {
+  padding-right: 5px;
+  padding-left: 35px;
+  color: #4d4d4d;
+  font-weight: normal;
+}
+/* line 81, ../sass/left-nav.scss */
+nav#menu.nav.menuTransition ul ul li ul li a:hover, nav#menu.nav.menuTransition ul ul li ul li a:active, nav#menu.nav ul ul li ul li a:hover, nav#menu.nav ul ul li ul li a:active {
+  color: white;
+}
+/* line 82, ../sass/left-nav.scss */
+nav#menu.nav.menuTransition ul ul li ul li ul li, nav#menu.nav ul ul li ul li ul li {
+  background-color: #ebebeb;
+}
+/* line 83, ../sass/left-nav.scss */
+nav#menu.nav.menuTransition ul ul li ul li ul li a, nav#menu.nav ul ul li ul li ul li a {
+  padding-right: 5px;
+  padding-left: 50px;
+  color: #4d4d4d;
+  font-weight: normal;
+}
+/* line 84, ../sass/left-nav.scss */
+nav#menu.nav.menuTransition ul ul li ul li ul li a:hover, nav#menu.nav.menuTransition ul ul li ul li ul li a:active, nav#menu.nav ul ul li ul li ul li a:hover, nav#menu.nav ul ul li ul li ul li a:active {
+  color: white;
+}
+/* line 85, ../sass/left-nav.scss */
+nav#menu.nav.menuTransition ul ul li ul li ul li ul li, nav#menu.nav ul ul li ul li ul li ul li {
+  background-color: #ebebeb;
+}
+/* line 86, ../sass/left-nav.scss */
+nav#menu.nav.menuTransition ul ul li ul li ul li ul li a, nav#menu.nav ul ul li ul li ul li ul li a {
+  padding-right: 5px;
+  padding-left: 65px;
+  color: #4d4d4d;
+  font-weight: normal;
+}
+/* line 87, ../sass/left-nav.scss */
+nav#menu.nav.menuTransition ul ul li ul li ul li ul li a:hover, nav#menu.nav.menuTransition ul ul li ul li ul li ul li a:active, nav#menu.nav ul ul li ul li ul li ul li a:hover, nav#menu.nav ul ul li ul li ul li ul li a:active {
+  color: white;
+}
+/* line 88, ../sass/left-nav.scss */
+nav#menu.nav.menuTransition ul ul li ul li ul li ul li ul li, nav#menu.nav ul ul li ul li ul li ul li ul li {
+  background-color: #ebebeb;
+}
+/* line 89, ../sass/left-nav.scss */
+nav#menu.nav.menuTransition ul ul li ul li ul li ul li ul li a, nav#menu.nav ul ul li ul li ul li ul li ul li a {
+  padding-right: 5px;
+  padding-left: 80px;
+  color: #4d4d4d;
+  font-weight: normal;
+}
+/* line 90, ../sass/left-nav.scss */
+nav#menu.nav.menuTransition ul ul li ul li ul li ul li ul li a:hover, nav#menu.nav.menuTransition ul ul li ul li ul li ul li ul li a:active, nav#menu.nav ul ul li ul li ul li ul li ul li a:hover, nav#menu.nav ul ul li ul li ul li ul li ul li a:active {
+  color: white;
+}
+/* line 91, ../sass/left-nav.scss */
+nav#menu.nav.menuTransition ul ul li ul li ul li ul li ul li ul li, nav#menu.nav ul ul li ul li ul li ul li ul li ul li {
+  background-color: #ebebeb;
+}
+/* line 92, ../sass/left-nav.scss */
+nav#menu.nav.menuTransition ul ul li ul li ul li ul li ul li ul li a, nav#menu.nav ul ul li ul li ul li ul li ul li ul li a {
+  padding-right: 5px;
+  padding-left: 95px;
+  color: #4d4d4d;
+  font-weight: normal;
+}
+/* line 93, ../sass/left-nav.scss */
+nav#menu.nav.menuTransition ul ul li ul li ul li ul li ul li ul li a:hover, nav#menu.nav.menuTransition ul ul li ul li ul li ul li ul li ul li a:active, nav#menu.nav ul ul li ul li ul li ul li ul li ul li a:hover, nav#menu.nav ul ul li ul li ul li ul li ul li ul li a:active {
+  color: white;
+}
+/* line 94, ../sass/left-nav.scss */
+nav#menu.nav.menuTransition ul ul li ul li ul li ul li ul li ul li ul li, nav#menu.nav ul ul li ul li ul li ul li ul li ul li ul li {
+  background-color: #ebebeb;
+}
+/* line 95, ../sass/left-nav.scss */
+nav#menu.nav.menuTransition ul ul li ul li ul li ul li ul li ul li ul li a, nav#menu.nav ul ul li ul li ul li ul li ul li ul li ul li a {
+  padding-right: 5px;
+  padding-left: 110px;
+  color: #4d4d4d;
+  font-weight: normal;
+}
+/* line 96, ../sass/left-nav.scss */
+nav#menu.nav.menuTransition ul ul li ul li ul li ul li ul li ul li ul li a:hover, nav#menu.nav.menuTransition ul ul li ul li ul li ul li ul li ul li ul li a:active, nav#menu.nav ul ul li ul li ul li ul li ul li ul li ul li a:hover, nav#menu.nav ul ul li ul li ul li ul li ul li ul li ul li a:active {
+  color: white;
+}
+/* line 97, ../sass/left-nav.scss */
+nav#menu.nav.menuTransition ul ul li ul li ul li ul li ul li ul li ul li ul li, nav#menu.nav ul ul li ul li ul li ul li ul li ul li ul li ul li {
+  background-color: #ebebeb;
+}
+/* line 98, ../sass/left-nav.scss */
+nav#menu.nav.menuTransition ul ul li ul li ul li ul li ul li ul li ul li ul li a, nav#menu.nav ul ul li ul li ul li ul li ul li ul li ul li ul li a {
+  padding-right: 5px;
+  padding-left: 125px;
+  color: #4d4d4d;
+  font-weight: normal;
+}
+/* line 99, ../sass/left-nav.scss */
+nav#menu.nav.menuTransition ul ul li ul li ul li ul li ul li ul li ul li ul li a:hover, nav#menu.nav.menuTransition ul ul li ul li ul li ul li ul li ul li ul li ul li a:active, nav#menu.nav ul ul li ul li ul li ul li ul li ul li ul li ul li a:hover, nav#menu.nav ul ul li ul li ul li ul li ul li ul li ul li ul li a:active {
+  color: white;
+}
+
+/************ Tablets and phones *******************/
+@media only screen and (max-width: 767px) {
+  /* line 117, ../sass/left-nav.scss */
+  .body-wrapper {
+    padding: 0;
+  }
+
+  /* line 119, ../sass/left-nav.scss */
+  nav#menu {
+    border-top: 1px solid #bfbeb5;
+    margin: 0;
+  }
+
+  /* menu contatiner styles for mobile  */
+  /* line 120, ../sass/left-nav.scss */
+  li.has-child a {
+    background: url("../images/has-child.png") no-repeat right;
+    background-size: 24px 20px;
+  }
+
+  /* has child navigation styles ... currently not is use */
+  /* line 122, ../sass/left-nav.scss */
+  nav#menu ul li {
+    height: 44px;
+    background-color: #ebebeb;
+    color: #484848;
+    font-size: 14px;
+    display: table;
+    /* a:hover, a:active{ background-color:$hover;color:$hover-text; }*/
+    /*commented out for testing*/
+    /* a:hover.navback{background-color:$hover;}*/
+    /*commented out for testing*/
+  }
+  /* line 123, ../sass/left-nav.scss */
+  nav#menu ul li a:link, nav#menu ul li a:visited {
+    color: #676860;
+    padding: 0 3px 0 10px;
+    text-decoration: none;
+    height: 44px;
+    display: table-cell;
+    vertical-align: middle;
+    width: 100%;
+    border-bottom: 1px solid #bfbeb5;
+  }
+  /* line 126, ../sass/left-nav.scss */
+  nav#menu ul li a.navback {
+    width: 100%;
+    height: 100%;
+    float: left;
+    margin-right: 10px;
+    padding: 0 !important;
+    display: table-cell;
+  }
+
+  /** root level styles **/
+  /* line 131, ../sass/left-nav.scss */
+  nav#menu.nav.menuTransition ul li.active-page, nav#menu.nav.menuTransition ul li.active-page span {
+    background-color: #7b776c;
+    font-weight: bold;
+    font-size: 15px;
+    padding: 0;
+    display: table-cell;
+    height: 44px;
+    vertical-align: middle;
+  }
+
+  /* line 133, ../sass/left-nav.scss */
+  nav#menu.nav.menuTransition ul li.expandable a.navnext {
+    float: right;
+    width: 40px;
+    border-left: 1px solid #bfbeb5;
+    padding: 0;
+    display: block;
+  }
+
+  /* forward arrow styles */
+  /*nav#menu.nav.menuTransition	ul li.expandable a.navnext:hover{background-color: $hover;}
+  a:hover.navnext{background-color:$hover;} */
+  /*commented out for testing*/
+  /* line 137, ../sass/left-nav.scss */
+  .nextarrow {
+    border-left: 1px solid white;
+    background: url("images/forward-arrow-shadow.png") no-repeat center;
+    background-size: 25px 25px;
+  }
+
+  /* line 138, ../sass/left-nav.scss */
+  .backarrow {
+    background: white url("images/back-arrow-shadow.png") no-repeat center left;
+    background-size: 25px 25px;
+  }
+
+  /*nav#menu.nav ul.parentnav{background-color: lighten($parent, 20%);}*/
+  /* line 140, ../sass/left-nav.scss */
+  nav#menu.nav ul.parentnav li.active.this.expandable, nav#menu.nav ul.parentnav li.active.expandable li.this.expandable {
+    background-color: #7b776c;
+  }
+
+  /* line 141, ../sass/left-nav.scss */
+  nav#menu.nav ul.parentnav li.this {
+    background-color: #cac8c2;
+    color: #676860 !important;
+    line-height: 40px;
+    /*padding-left:10px;*/
+    display: table;
+    /*a:hover.navnext.nextarrow.current{background-color:$hover;} commented out for testing*/
+  }
+  /* line 142, ../sass/left-nav.scss */
+  nav#menu.nav ul.parentnav li.this a:link, nav#menu.nav ul.parentnav li.this a:visited {
+    color: #fff;
+    font-weight: bold;
+  }
+  /* line 143, ../sass/left-nav.scss */
+  nav#menu.nav ul.parentnav li.this a.navnext.nextarrow.current {
+    background-color: #ebebeb;
+    margin-top: 0;
+  }
+  /* line 145, ../sass/left-nav.scss */
+  nav#menu.nav ul.parentnav li.this li a:link, nav#menu.nav ul.parentnav li.this li a:visited {
+    color: #484848;
+    font-weight: normal;
+  }
+  /* line 146, ../sass/left-nav.scss */
+  nav#menu.nav ul.parentnav li.this li a:hover, nav#menu.nav ul.parentnav li.this li a:active {
+    color: #fff;
+  }
+  /* line 147, ../sass/left-nav.scss */
+  nav#menu.nav ul.parentnav li.this span {
+    padding: 0 0 0 10px;
+    display: table-cell;
+    vertical-align: middle;
+    color: #fff;
+  }
+
+  /* line 151, ../sass/left-nav.scss */
+  nav#menu.nav.menuTransition ul ul li.parent a, nav#menu.nav ul ul li.parent a {
+    padding-left: 10px;
+  }
+  /* line 153, ../sass/left-nav.scss */
+  nav#menu.nav.menuTransition ul ul li a, nav#menu.nav ul ul li a {
+    padding-left: 20px;
+  }
+  /* line 155, ../sass/left-nav.scss */
+  nav#menu.nav.menuTransition ul ul li ul li a, nav#menu.nav ul ul li ul li a {
+    padding-left: 20px;
+  }
+  /* line 157, ../sass/left-nav.scss */
+  nav#menu.nav.menuTransition ul ul li ul li ul li a, nav#menu.nav ul ul li ul li ul li a {
+    padding-left: 20px;
+  }
+  /* line 159, ../sass/left-nav.scss */
+  nav#menu.nav.menuTransition ul ul li ul li ul li ul li a, nav#menu.nav ul ul li ul li ul li ul li a {
+    padding-left: 20px;
+  }
+  /* line 161, ../sass/left-nav.scss */
+  nav#menu.nav.menuTransition ul ul li ul li ul li ul li ul li a, nav#menu.nav ul ul li ul li ul li ul li ul li a {
+    padding-left: 20px;
+  }
+
+  /* line 171, ../sass/left-nav.scss */
+  nav#menu.nav ul.parentnav ul li.this span {
+    padding: 0 0 0 20px;
+    vertical-align: middle;
+    color: #fff;
+  }
+  /* line 173, ../sass/left-nav.scss */
+  nav#menu.nav ul.parentnav ul ul li.this span {
+    padding: 0 0 0 20px;
+    vertical-align: middle;
+    color: #fff;
+  }
+  /* line 176, ../sass/left-nav.scss */
+  nav#menu.nav ul.parentnav ul ul ul li.this span {
+    padding: 0 0 0 20px;
+    vertical-align: middle;
+    color: #fff;
+  }
+  /* line 179, ../sass/left-nav.scss */
+  nav#menu.nav ul.parentnav ul ul ul ul li.this span {
+    padding: 0 0 0 20px;
+    vertical-align: middle;
+    color: #fff;
+  }
+  /* line 182, ../sass/left-nav.scss */
+  nav#menu.nav ul.parentnav ul ul ul ul ul li.this span {
+    padding: 0 0 0 20px;
+    vertical-align: middle;
+    color: #fff;
+  }
+
+  /* line 189, ../sass/left-nav.scss */
+  nav#menu.nav ul.parentnav li.active-page span {
+    padding: 0 0 0 10px;
+  }
+
+  /* line 191, ../sass/left-nav.scss */
+  nav#menu.nav ul.parentnav li.parent {
+    display: table;
+    border-bottom: 1px solid #bfbeb5;
+    font-size: 15px;
+    background-color: #d2d2d2;
+    color: #000;
+  }
+  /* line 192, ../sass/left-nav.scss */
+  nav#menu.nav ul.parentnav li.parent span {
+    vertical-align: middle;
+  }
+  /* line 193, ../sass/left-nav.scss */
+  nav#menu.nav ul.parentnav li.parent a:link, nav#menu.nav ul.parentnav li.parent a:visited {
+    color: #000;
+    /*text-shadow:1px 1px 1px #000;*/
+  }
+
+  /* line 196, ../sass/left-nav.scss */
+  nav#menu.nav.menuTransition {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    float: none;
+  }
+
+  /* line 197, ../sass/left-nav.scss */
+  .menuTransition.nav ul {
+    margin: 0 !important;
+    padding: 0 !important;
+    list-style: none;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: none;
+    background-color: #7b776c;
+  }
+
+  /* line 198, ../sass/left-nav.scss */
+  .menuTransition.nav > ul {
+    left: 0;
+    display: block;
+  }
+
+  /* line 199, ../sass/left-nav.scss */
+  .menuTransition.nav ul li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    width: 100%;
+    
+  }
+
+  /* line 201, ../sass/left-nav.scss */
+  nav#menu.nav ul.parentnav {
+    visibility: visible;
+  }
+  /* line 203, ../sass/left-nav.scss */
+  nav#menu.nav ul.parentnav > li:first-child {
+    visibility: visible;
+  }
+  /* line 204, ../sass/left-nav.scss */
+  nav#menu.nav ul.parentnav ul#active li {
+    visibility: visible;
+  }
+  /* line 205, ../sass/left-nav.scss */
+  nav#menu.nav ul.parentnav li.active.expandable li.parent a:link, nav#menu.nav ul.parentnav li.active.expandable li.parent a:visited, nav#menu.nav ul.parentnav li.inactive.expandable li.parent a:link, nav#menu.nav ul.parentnav li.inactive.expandable li.parent a:visited {
+    color: #000;
+    border-bottom: none;
+    font-weight: bold;
+  }
+  /* line 206, ../sass/left-nav.scss */
+  nav#menu.nav ul.parentnav li.active.expandable li.parent a:hover, nav#menu.nav ul.parentnav li.active.expandable li.parent a:focus, nav#menu.nav ul.parentnav li.inactive.expandable li.parent a:hover, nav#menu.nav ul.parentnav li.inactive.expandable li.parent a:focus {
+    color: white;
+  }
+  /* line 207, ../sass/left-nav.scss */
+  nav#menu.nav ul.parentnav li.active.expandable li.backto a.backarrow.navback span, nav#menu.nav ul.parentnav li.inactive.expandable li.backto a.backarrow.navback span {
+    padding: 12px 0 8px 40px;
+    color: #b9b9b9;
+    font-size: 15px;
+    display: table-cell;
+    font-weight: bold;
+  }
+  /* line 208, ../sass/left-nav.scss */
+  nav#menu.nav ul.parentnav li.inactive li.parent a.navback.backarrow {
+    margin-right: 0px;
+  }
+
+  /* line 211, ../sass/left-nav.scss */
+  nav#menu.nav ul.parentnav li.inactive {
+    display: table;
+  }
+
+  /* line 222, ../sass/left-nav.scss */
+  .no-touch nav#menu ul.parentnav li a:hover, .no-touch nav#menu ul.parentnav ul li.parent a:hover {
+    color: white;
+  }
+  /* line 225, ../sass/left-nav.scss */
+  .no-touch nav#menu ul li a:hover, .no-touch a:active {
+    background-color: #9a978c;
+    color: white;
+  }
+  /* line 226, ../sass/left-nav.scss */
+  .no-touch nav#menu ul li a:hover.navback {
+    background-color: #9a978c;
+  }
+  /* line 227, ../sass/left-nav.scss */
+  .no-touch nav#menu.nav.menuTransition ul li.expandable a.navnext:hover {
+    background-color: #9a978c;
+  }
+  /* line 228, ../sass/left-nav.scss */
+  .no-touch a:hover.navnext {
+    background-color: #9a978c;
+  }
+  /* line 229, ../sass/left-nav.scss */
+  .no-touch nav#menu.nav ul.parentnav li.this a:hover.navnext.nextarrow.current {
+    background-color: #9a978c;
+  }
+  /* line 230, ../sass/left-nav.scss */
+  .no-touch nav#menu.nav ul.parentnav li.thisnav#menu.nav ul.parentnav li.this li a:hover, .no-touch nav#menu.nav ul.parentnav li.this li a:active {
+    color: #fff;
+  }
+  /* line 231, ../sass/left-nav.scss */
+  .no-touch nav#menu li.backto a.backarrow:hover span {
+    color: white !important;
+  }
+}
